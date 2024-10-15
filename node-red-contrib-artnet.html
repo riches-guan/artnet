@@ -1,0 +1,52 @@
+<script type="text/javascript">
+    RED.nodes.registerType('artnet输出',{
+        category: 'network',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value: ""},
+            address: {value: "127.0.0.1"},
+            port: {value: 6454},
+            size: {value: 512},
+            rate: {value: 40},
+            universe: {value: 0, validate:RED.validators.number()}
+        },
+        inputs:1,
+        outputs:0,
+        align: "left",
+        icon: "light.png",
+        label: function() {
+            return this.name || "artnet输出";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="artnet输出">
+	<div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> 名称</label>
+        <input type="text" id="node-input-name" placeholder="名称">
+    </div>
+    <div class="form-row">
+        <label for="node-input-address"><i class="fa fa-bookmark"></i> 地址</label>
+        <input type="text" id="node-input-address" placeholder="IP 地址">
+    </div>
+    <div class="form-row">
+        <label for="node-input-port"><i class="fa fa-tag"></i> 端口</label>
+        <input type="text" id="node-input-port" placeholder="端口">
+    </div>
+    <div class="form-row">
+        <label for="node-input-size"><i class="fa fa-tag"></i> 大小</label>
+        <input type="text" id="node-input-size" placeholder="数据大小">
+    </div>
+    <div class="form-row">
+        <label for="node-input-rate"><i class="fa fa-tag"></i> 速率</label>
+        <input type="text" id="node-input-rate" placeholder="速率">
+    </div>
+     <div class="form-row">
+        <label for="node-input-universe"><i class="fa fa-tag"></i> 域</label>
+        <input type="text" id="node-input-universe" placeholder="域">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="artnet输出">
+    <p>artnet</p>
+</script>
