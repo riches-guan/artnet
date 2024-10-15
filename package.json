@@ -1,13 +1,13 @@
 {
     "name"          : "node-red-contrib-artnet",
     "version"       : "0.0.1",
-    "description"   : "Node-RED node that controls lights via artnet",
+    "description"   : "artnet",
     "dependencies"  : {
         "artnet-node": "gunnebo-ab/artnet-node"
     },
 	"repository" : {
         "type":"git",
-        "url":"https://github.com/gunnebo-ab/node-red-contrib-artnet"
+        "url":"https://github.com/riches-guan/artnet.git"
     },
     "license": "MIT",
     "keywords": [ "node-red", "artnet", "dmx", "light" ],
